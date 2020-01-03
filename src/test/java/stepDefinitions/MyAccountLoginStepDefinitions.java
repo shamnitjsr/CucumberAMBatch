@@ -21,8 +21,8 @@ public class MyAccountLoginStepDefinitions {
 	}
 
 	@And("^Enter the URL \"([^\"]*)\"$")
-	public void enter_the_URL(String arg1) throws Throwable {
-		driver.get("http://practice.automationtesting.in/");
+	public void enter_the_URL(String url) throws Throwable {
+		driver.get(url);
 	}
 
 	@And("^Click on My Account Menu$")
@@ -31,12 +31,17 @@ public class MyAccountLoginStepDefinitions {
 		driver.findElement(By.linkText("My Account")).click();
 	}
 
-	@And("^Enter registered username and password$")
-	public void enter_registered_username_and_password() throws Throwable {
-		driver.findElement(By.id("username")).sendKeys("pavanoltraining");
-	    driver.findElement(By.id("password")).sendKeys("Test@selenium123");
-	}
+	/*@And("^Enter registered username and password$")
+	public void enter_registered_username_and_password(String username,String password) throws Throwable {
+		driver.findElement(By.id("username")).sendKeys("username");
+	    driver.findElement(By.id("password")).sendKeys("password");
+	}*/
 
+	@And("^Enter registered username \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void enter_registered_username_and_password(String user, String pass) throws Throwable {
+		driver.findElement(By.id("username")).sendKeys(user);
+	    driver.findElement(By.id("password")).sendKeys(pass);
+	}
 	@And("^Click on login button$")
 	public void click_on_login_button() throws Throwable {
 		driver.findElement(By.name("login")).click();

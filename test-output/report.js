@@ -37,7 +37,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Enter registered username and password",
+  "name": "Enter registered username \"pavanoltraining\" and password \"Test@selenium123\"",
   "keyword": "And "
 });
 formatter.step({
@@ -54,7 +54,7 @@ formatter.match({
   "location": "MyAccountLoginStepDefinitions.open_the_browser()"
 });
 formatter.result({
-  "duration": 7642560900,
+  "duration": 5901343800,
   "status": "passed"
 });
 formatter.match({
@@ -67,35 +67,45 @@ formatter.match({
   "location": "MyAccountLoginStepDefinitions.enter_the_URL(String)"
 });
 formatter.result({
-  "duration": 12738384200,
+  "duration": 11257635300,
   "status": "passed"
 });
 formatter.match({
   "location": "MyAccountLoginStepDefinitions.click_on_My_Account_Menu()"
 });
 formatter.result({
-  "duration": 6810192800,
+  "duration": 5471371700,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyAccountLoginStepDefinitions.enter_registered_username_and_password()"
+  "arguments": [
+    {
+      "val": "pavanoltraining",
+      "offset": 27
+    },
+    {
+      "val": "Test@selenium123",
+      "offset": 58
+    }
+  ],
+  "location": "MyAccountLoginStepDefinitions.enter_registered_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 689955900,
+  "duration": 1079271200,
   "status": "passed"
 });
 formatter.match({
   "location": "MyAccountLoginStepDefinitions.click_on_login_button()"
 });
 formatter.result({
-  "duration": 5862121600,
+  "duration": 6975216900,
   "status": "passed"
 });
 formatter.match({
   "location": "MyAccountLoginStepDefinitions.user_must_successfully_login_to_the_web_page()"
 });
 formatter.result({
-  "duration": 2394622500,
+  "duration": 2376780100,
   "status": "passed"
 });
 });

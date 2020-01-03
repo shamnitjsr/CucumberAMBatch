@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7642560900,
+              "duration": 5901343800,
               "status": "passed"
             },
             "line": 6,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 12738384200,
+              "duration": 11257635300,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 6810192800,
+              "duration": 5471371700,
               "status": "passed"
             },
             "line": 8,
@@ -60,19 +60,29 @@
           },
           {
             "result": {
-              "duration": 689955900,
+              "duration": 1079271200,
               "status": "passed"
             },
             "line": 9,
-            "name": "Enter registered username and password",
+            "name": "Enter registered username \"pavanoltraining\" and password \"Test@selenium123\"",
             "match": {
-              "location": "MyAccountLoginStepDefinitions.enter_registered_username_and_password()"
+              "arguments": [
+                {
+                  "val": "pavanoltraining",
+                  "offset": 27
+                },
+                {
+                  "val": "Test@selenium123",
+                  "offset": 58
+                }
+              ],
+              "location": "MyAccountLoginStepDefinitions.enter_registered_username_and_password(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5862121600,
+              "duration": 6975216900,
               "status": "passed"
             },
             "line": 10,
@@ -84,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 2394622500,
+              "duration": 2376780100,
               "status": "passed"
             },
             "line": 11,
