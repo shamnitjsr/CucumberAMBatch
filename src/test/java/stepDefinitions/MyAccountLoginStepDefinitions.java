@@ -15,7 +15,7 @@ public class MyAccountLoginStepDefinitions {
 	
 	@Given("^Open the browser$")
 	public void open_the_browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shamn\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\BH14732\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
@@ -46,5 +46,6 @@ public class MyAccountLoginStepDefinitions {
 	public void user_must_successfully_login_to_the_web_page() throws Throwable {
 	  String capText= driver.findElement(By.xpath("//*[@id='page-36']/div/div[1]/div/p[1]/strong")).getText();
 	  Assert.assertEquals(true,capText.contains("pavanoltraining"));
+	  driver.quit();
 	}
 }
